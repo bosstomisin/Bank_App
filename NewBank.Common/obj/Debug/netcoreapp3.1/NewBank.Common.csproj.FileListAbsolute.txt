@@ -1,0 +1,9 @@
+C:\Users\hp\source\repos\NewBankProject\NewBank.Common\bin\Debug\netcoreapp3.1\NewBank.Common.deps.json
+C:\Users\hp\source\repos\NewBankProject\NewBank.Common\bin\Debug\netcoreapp3.1\NewBank.Common.dll
+C:\Users\hp\source\repos\NewBankProject\NewBank.Common\bin\Debug\netcoreapp3.1\NewBank.Common.pdb
+C:\Users\hp\source\repos\NewBankProject\NewBank.Common\obj\Debug\netcoreapp3.1\NewBank.Common.csprojAssemblyReference.cache
+C:\Users\hp\source\repos\NewBankProject\NewBank.Common\obj\Debug\netcoreapp3.1\NewBank.Common.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\NewBankProject\NewBank.Common\obj\Debug\netcoreapp3.1\NewBank.Common.AssemblyInfo.cs
+C:\Users\hp\source\repos\NewBankProject\NewBank.Common\obj\Debug\netcoreapp3.1\NewBank.Common.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\NewBankProject\NewBank.Common\obj\Debug\netcoreapp3.1\NewBank.Common.dll
+C:\Users\hp\source\repos\NewBankProject\NewBank.Common\obj\Debug\netcoreapp3.1\NewBank.Common.pdb

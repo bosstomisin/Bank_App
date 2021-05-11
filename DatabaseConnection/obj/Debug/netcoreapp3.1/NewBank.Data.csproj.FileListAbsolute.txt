@@ -1,0 +1,15 @@
+C:\Users\hp\source\repos\NewBankProject\DatabaseConnection\bin\Debug\netcoreapp3.1\NewBank.Data.deps.json
+C:\Users\hp\source\repos\NewBankProject\DatabaseConnection\bin\Debug\netcoreapp3.1\NewBank.Data.runtimeconfig.json
+C:\Users\hp\source\repos\NewBankProject\DatabaseConnection\bin\Debug\netcoreapp3.1\NewBank.Data.runtimeconfig.dev.json
+C:\Users\hp\source\repos\NewBankProject\DatabaseConnection\bin\Debug\netcoreapp3.1\NewBank.Data.dll
+C:\Users\hp\source\repos\NewBankProject\DatabaseConnection\bin\Debug\netcoreapp3.1\NewBank.Data.pdb
+C:\Users\hp\source\repos\NewBankProject\DatabaseConnection\bin\Debug\netcoreapp3.1\NewBank.Model.dll
+C:\Users\hp\source\repos\NewBankProject\DatabaseConnection\bin\Debug\netcoreapp3.1\NewBank.Model.pdb
+C:\Users\hp\source\repos\NewBankProject\DatabaseConnection\obj\Debug\netcoreapp3.1\NewBank.Data.csprojAssemblyReference.cache
+C:\Users\hp\source\repos\NewBankProject\DatabaseConnection\obj\Debug\netcoreapp3.1\NewBank.Data.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\NewBankProject\DatabaseConnection\obj\Debug\netcoreapp3.1\NewBank.Data.AssemblyInfo.cs
+C:\Users\hp\source\repos\NewBankProject\DatabaseConnection\obj\Debug\netcoreapp3.1\NewBank.Data.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\NewBankProject\DatabaseConnection\obj\Debug\netcoreapp3.1\NewBank.Data.csproj.CopyComplete
+C:\Users\hp\source\repos\NewBankProject\DatabaseConnection\obj\Debug\netcoreapp3.1\NewBank.Data.dll
+C:\Users\hp\source\repos\NewBankProject\DatabaseConnection\obj\Debug\netcoreapp3.1\NewBank.Data.pdb
+C:\Users\hp\source\repos\NewBankProject\DatabaseConnection\obj\Debug\netcoreapp3.1\NewBank.Data.genruntimeconfig.cache
