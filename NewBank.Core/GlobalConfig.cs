@@ -1,4 +1,5 @@
 ﻿using DatabaseConnection;
+using Microsoft.EntityFrameworkCore;
 using NewBank.Core;
 using NewBank.Core.Abstraction;
 using NewBank.Core.Interface;
@@ -21,6 +22,7 @@ namespace NewBank.Core
         public static IAuth _auth { get; set; }
         public static void AddInstance()
         {
+            //var options = new DbContextOptionsBuilder<DataContext>().UseSqlite(@"Data Source = C:\Users\hp\source\repos\NewBankProject\DatabaseConnection\NewBank.db");
             DbContextInstance = new DataContext();
             CustoRepo = new CustomerRepository();
             AccountRepo = new AccountRepository();

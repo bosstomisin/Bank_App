@@ -68,3 +68,5 @@ C:\Users\hp\source\repos\NewBankProject\NewBank.UI\obj\Debug\netcoreapp3.1\NewBa
 C:\Users\hp\source\repos\NewBankProject\NewBank.UI\obj\Debug\netcoreapp3.1\NewBank.UI.dll
 C:\Users\hp\source\repos\NewBankProject\NewBank.UI\obj\Debug\netcoreapp3.1\NewBank.UI.pdb
 C:\Users\hp\source\repos\NewBankProject\NewBank.UI\obj\Debug\netcoreapp3.1\NewBank.UI.genruntimeconfig.cache
+C:\Users\hp\source\repos\NewBankProject\NewBank.UI\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\hp\source\repos\NewBankProject\NewBank.UI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll

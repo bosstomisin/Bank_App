@@ -27,7 +27,7 @@ namespace NewBank.Core.Repository
                 AccountId = account.AccountId
             };
             customer.AccountList.Add(account);
-            _context.Add(customer);
+            _context.Customers.Add(customer);
             _context.SaveChanges();
            return account.AccountNumber;
         }

@@ -88,8 +88,6 @@ namespace NewBank.UI
                 }
             }
            
-
-            
         }
 
         private void Pin_txt_field_TextChanged(object sender, EventArgs e)

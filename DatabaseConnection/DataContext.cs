@@ -9,16 +9,21 @@ namespace DatabaseConnection
     public class DataContext : DbContext
 
     {
-        //public static string workingDirectory = Environment.CurrentDirectory;
-        //public static readonly string projectDirectory = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
+
+        /*public DataContext(DbContextOptionsBuilder<DataContext> builder): base(builder.Options)
+        {
+            Database.EnsureCreated();
+        }*/
         
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Account> Accounts { get; set; }
-        //public DbSet<AccountType> AccountTypes  { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Data Source = C:\Users\hp\source\repos\NewBankProject\DatabaseConnection\NewBank.db");
+            //if (!optionsBuilder.IsConfigured)
+            //    optionsBuilder.UseInMemoryDatabase("");
+            optionsBuilder.UseSqlite(@"DataSource=C:\Users\hp\source\repos\NewBankProject\DatabaseConnection\NewBank.db");
+            
         
         }
     }
