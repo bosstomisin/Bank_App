@@ -44,6 +44,7 @@ namespace NewBank.UI
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.login = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -125,12 +126,13 @@ namespace NewBank.UI
             this.Pin_txt_field.Name = "Pin_txt_field";
             this.Pin_txt_field.Size = new System.Drawing.Size(225, 31);
             this.Pin_txt_field.TabIndex = 7;
+            this.Pin_txt_field.UseSystemPasswordChar = true;
             this.Pin_txt_field.TextChanged += new System.EventHandler(this.Pin_txt_field_TextChanged);
             // 
             // Register_field
             // 
             this.Register_field.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Register_field.Location = new System.Drawing.Point(258, 476);
+            this.Register_field.Location = new System.Drawing.Point(177, 456);
             this.Register_field.Name = "Register_field";
             this.Register_field.Size = new System.Drawing.Size(154, 45);
             this.Register_field.TabIndex = 8;
@@ -211,12 +213,24 @@ namespace NewBank.UI
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = " ...a bank you can always trust";
             // 
+            // login
+            // 
+            this.login.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.login.Location = new System.Drawing.Point(470, 456);
+            this.login.Name = "login";
+            this.login.Size = new System.Drawing.Size(154, 45);
+            this.login.TabIndex = 15;
+            this.login.Text = "Login";
+            this.login.UseVisualStyleBackColor = true;
+            this.login.Click += new System.EventHandler(this.login_Click_1);
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SaddleBrown;
             this.ClientSize = new System.Drawing.Size(778, 533);
+            this.Controls.Add(this.login);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.Register_field);
@@ -256,5 +270,6 @@ namespace NewBank.UI
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button login;
     }
 }

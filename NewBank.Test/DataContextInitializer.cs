@@ -40,14 +40,14 @@ namespace NewBank.Test
 };
             context.Customers.AddRange(customers);
             context.SaveChanges();
-
+          
             var accounts = new Account[]
            {
-                new Account{AccountId = "ab", AccountNumber = "123", AccountType = "Savings", Balance = 1110, CustomerId = "ef", TransactionId = "a"},
-                new Account{AccountId = "bc", AccountNumber = "345", AccountType = "Current", Balance = 1110, CustomerId = "fg", TransactionId = "b"},
-                new Account{AccountId = "cd", AccountNumber = "567", AccountType = "Savings", Balance = 1110, CustomerId = "gh", TransactionId = "c"},
+                new Account{AccountId = "ab", AccountNumber = "365111", AccountType = "Savings", Balance = 1110, CustomerId = "ef", TransactionId = "a" },//123
+                new Account{AccountId = "bc", AccountNumber = "365112", AccountType = "Current", Balance = 1110, CustomerId = "fg", TransactionId = "b"},//345
+                new Account{AccountId = "cd", AccountNumber = "365113", AccountType = "Savings", Balance = 1110, CustomerId = "gh",TransactionId = "c" },//567
            };
-            context.Accounts.AddRange(accounts);
+           context.Accounts.AddRange(accounts);
             context.SaveChanges();
 
 

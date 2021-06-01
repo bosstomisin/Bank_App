@@ -92,6 +92,7 @@ namespace NewBank.UI
             this.Pin_login_field.Name = "Pin_login_field";
             this.Pin_login_field.Size = new System.Drawing.Size(230, 31);
             this.Pin_login_field.TabIndex = 4;
+            this.Pin_login_field.UseSystemPasswordChar = true;
             this.Pin_login_field.TextChanged += new System.EventHandler(this.Pin_login_field_TextChanged);
             // 
             // panel1

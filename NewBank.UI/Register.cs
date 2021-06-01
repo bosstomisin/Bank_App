@@ -77,7 +77,7 @@ namespace NewBank.UI
                     this.Hide();
                     Login login = new Login(_auth, _custoRepo, _bankOp, _accountRepo);
                     login.Show();
-                    MessageBox.Show("Login Successfull");
+                    MessageBox.Show($"Registration Successfull, Your account Number is {account} ");
                 }
                 else if(Savings_account.Checked == true)
                 {
@@ -142,19 +142,26 @@ namespace NewBank.UI
 
         }
 
-        private void richTextBox2_TextChanged(object sender, EventArgs e)
-        {
+        //private void richTextBox2_TextChanged(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
-        {
+        //private void textBox1_TextChanged_1(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void login_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login(_auth, _custoRepo, _bankOp, _accountRepo);
+            login.Show();
         }
     }
 }

@@ -9,10 +9,16 @@ namespace NewBank.Core.Repository
     public class CustomerRepository : ICustomerRepository
     {
         DataContext _context = GlobalConfig.DbContextInstance;
-        public void CreateDataBase() {
 
-            _context.Database.EnsureCreated();
-        }
+
+        //private readonly ICustomerRepository _custoRepo;
+        //public CustomerRepository(ICustomerRepository custoRepo)
+        //{
+        //    _context = GlobalConfig.DbContextInstance;
+        //    _custoRepo = custoRepo;
+        //}
+
+
         //adds a new customer
         public string AddCustomer(string firstName, string secondName, string email, string password, string accountType)
         {

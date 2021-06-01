@@ -22,6 +22,7 @@ namespace NewBank.Core
         public bool Deposit(string accnum, decimal amount, string note)
         {
             var userAccountId = _context.Accounts.FirstOrDefault(x => x.AccountNumber == accnum).AccountId;
+           
             if (amount <= 0)
             {
                 return false;

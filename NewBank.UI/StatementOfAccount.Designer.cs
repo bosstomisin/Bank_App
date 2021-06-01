@@ -40,6 +40,7 @@ namespace NewBank.UI
             this.displayTransaction = new System.Windows.Forms.DataGridView();
             this.GetTrans = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.Balance = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.displayTransaction)).BeginInit();
             this.SuspendLayout();
@@ -142,6 +143,7 @@ namespace NewBank.UI
             this.displayTransaction.RowTemplate.Height = 33;
             this.displayTransaction.Size = new System.Drawing.Size(799, 277);
             this.displayTransaction.TabIndex = 3;
+            this.displayTransaction.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.displayTransaction_CellContentClick);
             // 
             // GetTrans
             // 
@@ -161,12 +163,21 @@ namespace NewBank.UI
             this.label2.Size = new System.Drawing.Size(0, 25);
             this.label2.TabIndex = 5;
             // 
+            // Balance
+            // 
+            this.Balance.BackColor = System.Drawing.SystemColors.Window;
+            this.Balance.Location = new System.Drawing.Point(429, 57);
+            this.Balance.Name = "Balance";
+            this.Balance.Size = new System.Drawing.Size(273, 25);
+            this.Balance.TabIndex = 6;
+            // 
             // StatementOfAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SaddleBrown;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Balance);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.GetTrans);
             this.Controls.Add(this.displayTransaction);
@@ -196,5 +207,6 @@ namespace NewBank.UI
         private System.Windows.Forms.Button GetTrans;
         private System.Windows.Forms.Button Logout;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Balance;
     }
 }

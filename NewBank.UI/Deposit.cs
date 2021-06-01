@@ -47,9 +47,9 @@ namespace NewBank.UI
 
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show(ex.Message, "Amount cannot be negative");
+                MessageBox.Show("Amount cannot be negative");
             }
         }
 

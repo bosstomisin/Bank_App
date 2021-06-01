@@ -6,8 +6,8 @@ using Xunit;
 
 namespace NewBank.Test
 {
-    
-    public class BankOperationTest:DataContextBase
+
+    public class BankOperationTest : DataContextBase
     {
         public IBankOperations ConfigInstance()
         {
@@ -22,16 +22,16 @@ namespace NewBank.Test
             var bankOperations = ConfigInstance();
 
             //arrange
-            string accountNumber = "123";
-            decimal amount = -12;
+            string accountNumber = "365111";
+            decimal amount = -14;
 
             decimal amountTw0 = 12;
             string note = "transfer";
 
 
             //act
-            var transaction = bankOperations.Deposit(accountNumber,amount,note);
-            var transactionTwo = bankOperations.Deposit(accountNumber,amountTw0,note);
+            var transaction = bankOperations.Deposit(accountNumber, amount, note);
+            var transactionTwo = bankOperations.Deposit(accountNumber, amountTw0, note);
 
             //assert
             Assert.False(transaction);
@@ -43,19 +43,19 @@ namespace NewBank.Test
         {
             var bankOperations = ConfigInstance();
             //arrange
-            string accountNumber = "123";
-            string accountNumberTwo = "123";
-            string accountNumberThree = "345";
-           decimal amount = 10;
+            string accountNumber = "365111";
+            string accountNumberTwo = "365111";
+            string accountNumberThree = "365112";
+            decimal amount = 10;
             decimal amountTwo = 450;
             decimal amountThree = 2050;
             string note = "";
 
 
             //act
-           var checkSavingsAccountNumber = bankOperations.Withdraw(accountNumberTwo, amountTwo, note);
-           var checkCurrentAccountNumber = bankOperations.Withdraw(accountNumberThree, amountThree, note);
-           var withdraw = bankOperations.Withdraw(accountNumber, amount, note);
+            var checkSavingsAccountNumber = bankOperations.Withdraw(accountNumberTwo, amountTwo, note);
+            var checkCurrentAccountNumber = bankOperations.Withdraw(accountNumberThree, amountThree, note);
+            var withdraw = bankOperations.Withdraw(accountNumber, amount, note);
 
             //assert
             Assert.True(withdraw);
@@ -69,13 +69,13 @@ namespace NewBank.Test
         {
             var bankOperations = ConfigInstance();
             //arrange
-            string depositorAccountNumber = "123";
-            string creditorAccountNumber = "345";
+            string depositorAccountNumber = "365111";
+            string creditorAccountNumber = "365112";
             string falseAccountNumber = "945";
             decimal amount = 345;
             string note = "";
-            string accountNumber1 = "123";
-            string accountNumber2 = "123";
+            string accountNumber1 = "365111";
+            string accountNumber2 = "365111";
 
             //act
             var transfer = bankOperations.Transfer(depositorAccountNumber, creditorAccountNumber, amount, note);

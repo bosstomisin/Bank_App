@@ -7,7 +7,7 @@ namespace NewBank.Core.Abstraction
 {
     public interface ICustomerRepository
     {
-        public void CreateDataBase();
+        //public void CreateDataBase();
         public string AddCustomer(string firstName, string secondName, string email, string password, string accountType);
         public void DeleteCustomer();
     }

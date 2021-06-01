@@ -1,5 +1,6 @@
 ﻿using DatabaseConnection;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 
 namespace NewBank.Test
@@ -9,7 +10,7 @@ namespace NewBank.Test
         private readonly DataContext _context = new DataContext();
         public DataContextBase()
         {
-           
+
             var options = new DbContextOptionsBuilder<DataContext>()
                 .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
                 .Options;
@@ -24,5 +25,6 @@ namespace NewBank.Test
             _context.Database.EnsureDeleted();
             _context.Dispose();
         }
+        
     }
 }

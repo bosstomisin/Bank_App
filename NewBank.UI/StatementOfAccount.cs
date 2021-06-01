@@ -71,8 +71,11 @@ namespace NewBank.UI
                 TransactionAmount = x.Amount.ToString(),
                 Note = x.Notes,
                 Date = x.Date.ToString(),
-                TransactionId = x.TransactionId.ToString()
+                TransactionId = x.TransactionId.ToString(),
+                transactionType = x.TransactionType
             }).ToList();
+            var balance = _accountRepo.GetAccount(AccountNum).Balance;
+            Balance.Text = $"Balance: {balance}";
         }
 
         private void Logout_Click(object sender, EventArgs e)
@@ -80,6 +83,11 @@ namespace NewBank.UI
             this.Hide();
             Login login = new Login(_auth, _custoRepo, _bankOp, _accountRepo);
             login.Show();
+        }
+
+        private void displayTransaction_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
